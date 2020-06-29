@@ -39,8 +39,7 @@ jobs:
             path: /tmp/apk
             destination: apks
   
-  workflows:
-    version: 2
-    build_and_deploy:
-      jobs:
-        - build
+workflows:
+  build_and_deploy:
+    jobs:
+      - build
